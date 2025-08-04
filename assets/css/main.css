@@ -2,20 +2,25 @@
 
 /* Fonts */
 :root {
-  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Raleway",  sans-serif;
-  --nav-font: "Poppins",  sans-serif;
+  --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Raleway", sans-serif;
+  --nav-font: "Poppins", sans-serif;
 }
 
 :root {
   /* Cores principais */
   --background-color: #ffffff;
   --surface-color: #f5f7fa;
-  --default-color: #051e23;         /* Azul bem escuro (quase preto) */
-  --heading-color: #1c4b56;         /* Azul mais claro para títulos */
-  --accent-color: #0071BC;          /* Azul principal (do logo) */
-  --secondary-accent-color: #003366;/* Azul escuro usado no "M" */
-  --highlight-color: #C0C0C0;       /* Cinza prata metálico */
+  --default-color: #051e23;
+  /* Azul bem escuro (quase preto) */
+  --heading-color: #1c4b56;
+  /* Azul mais claro para títulos */
+  --accent-color: #0071BC;
+  /* Azul principal (do logo) */
+  --secondary-accent-color: #003366;
+  /* Azul escuro usado no "M" */
+  --highlight-color: #C0C0C0;
+  /* Cinza prata metálico */
   --contrast-color: #ffffff;
 
   /* Navegação */
@@ -590,11 +595,9 @@ h6 {
   color: var(--accent-color);
 }
 
-.footer .footer-about a {
-  color: var(--heading-color);
-  font-size: 24px;
-  font-weight: 600;
-  font-family: var(--heading-font);
+.footer .footer-about img {
+  text-align: center;
+  max-width: 150px;
 }
 
 .footer .footer-contact p {
@@ -1521,8 +1524,8 @@ section,
 }
 
 .featured-tours .tour-card .tour-image img {
-  width: 100%;
-  height: 100%;
+  width: 306px;
+  height: 306px;
   object-fit: cover;
   transition: transform 0.3s ease;
 }

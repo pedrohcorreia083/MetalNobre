@@ -43,10 +43,10 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="#hero" class="active">Home</a></li>
           <li><a href="#about">Quem Somos</a></li>
           <li><a href="#produtos">Produtos</a></li>
-          <li><a href="#contato">Contato</a></li>
+          <li><a href="#contact">Contato</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -57,7 +57,7 @@
   <main class="main">
 
     <!-- Travel Hero Section -->
-    <section id="travel-hero" class="travel-hero section dark-background">
+    <section id="hero" class="travel-hero section dark-background">
 
       <div class="hero-background">
         <video autoplay="" muted="" loop="">
@@ -87,7 +87,7 @@
     </section><!-- /Travel Hero Section -->
 
     <!-- Why Us Section -->
-    <section id="why-us" class="why-us section">
+    <section id="about" class="why-us section">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -167,9 +167,9 @@
                 <img src="assets/img/totens/1.avif" alt="Totens" class="img-fluid" loading="lazy">
               </div>
               <div class="tour-content">
-                <h4>Totem Veicular</h4>
+                <h4>Totens</h4>
                 <p>
-                  Totem para controle de acesso veicular.
+                  Totens para controle de acesso veicular, de pedestres e para fixação de sensores
                 </p>
                 <p>
                   Solução ideal para condomínios, automatizando o acesso de moradores e visitantes com segurança e
@@ -188,13 +188,14 @@
                 <img src="assets/img/suportes/1.avif" alt="Suportes" class="img-fluid" loading="lazy">
               </div>
               <div class="tour-content">
-                <h4>Suportes de Controle de Acesso</h4>
+                <h4>Suportes para Controle de Acesso</h4>
                 <p>
-                  Suportes para equipamentos de controle de acesso de pedestres.
+                  Suportes para equipamentos de controle de acesso Facial utilizado para acesso de pedestres e acesso
+                  veiculares.
                 </p>
                 <p>
-                  Fabricados em aço com pintura epóxi nas cores branca ou preta. Compatíveis com leitores faciais e
-                  dispositivos de controle dos principais fabricantes.
+                  Fabricados em aço com pintura epóxi nas cor preta. Compatíveis com leitores faciais e dispositivos de
+                  controle dos principais fabricantes.
                 </p>
                 <div class="tour-action">
                   <a href="#" class="btn-book">Conhecer os produtos</a>
@@ -255,25 +256,17 @@
                   Fale com um Especialista
                 </a>
               </div>
-
               <div class="quick-contact">
-                <span class="contact-label">Horários: Segunda a Quinta 08:00 ás 18:00 Sexta 08:00 ás 17:00</span>
+                <span class="contact-label">PRODUTOS 100% BRASILEIRO</span>
               </div>
-
-              <div class="quick-contact">
-                <span class="contact-label">Atendimento rápido em todo o Brasil</span>
-                <a href="tel:+551129456222" class="contact-link">
-                  <i class="bi bi-telephone"></i>
-                  Ligue (11) 2945-6222
-                </a>
-              </div>
-
-
             </div>
           </div>
 
           <div class="visual-element">
-            <img src="./assets/img/cta.jpg" alt="Produtos Metal Nobre" class="hero-image" loading="lazy">
+            <video autoplay="" muted="" loop="">
+              <source src="./assets/img/cta.mp4" type="video/mp4">
+            </video>
+            <!-- <img src="./assets/img/cta.jpg" alt="Produtos Metal Nobre" class="hero-image" loading="lazy"> -->
             <div class="image-overlay">
               <div class="stat-item">
                 <span class="stat-number">+20 anos</span>
@@ -340,6 +333,88 @@
     </section>
     <!-- /Call To Action Section -->
 
+    <!-- Contact Section -->
+    <section id="contact" class="contact section dark-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contato</h2>
+        <p>Entre com contato com a gente</p>
+      </div><!-- End Section Title -->
+
+      <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-5">
+            <div class="info-item d-flex">
+              <i class="bi bi-clock flex-shrink-0"></i>
+              <div>
+                <h3>Horários</h3>
+                <p>Segunda a Quinta 08:00 ás 18:00</p>
+                <p> Sexta 08:00 ás 17:00</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex">
+              <i class="bi bi-telephone flex-shrink-0"></i>
+              <div>
+                <h3>Contato</h3>
+                <a href="https://wa.me/551129456222">
+                  <p>(11) 2945-6222</p>
+                </a>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex">
+              <i class="bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h3>Email</h3>
+                <p>contato@metalnobre.com.br</p>
+              </div>
+            </div><!-- End Info Item -->
+
+          </div>
+
+          <div class="col-lg-7">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up"
+              data-aos-delay="200">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Nome" required="">
+                </div>
+
+                <div class="col-md-6 ">
+                  <input type="email" class="form-control" name="email" placeholder="Email" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="subject" placeholder="Assunto" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Mensagem" required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">Enviar Mensagem</button>
+                </div>
+
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
 
   </main>
 
@@ -361,10 +436,10 @@
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>Links Úteis</h4>
           <ul>
-            <li><i class="bi bi-chevron-right"></i> <a href="#index">Início</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#sobre">Sobre</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#hero">Início</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#about">Sobre</a></li>
             <li><i class="bi bi-chevron-right"></i> <a href="#produtos">Produtos</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#contato">Contato</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#contact">Contato</a></li>
           </ul>
         </div>
 
@@ -384,10 +459,10 @@
           <h4>Siga nas redes</h4>
           <p>Fique por dentro das novidades, lançamentos e dicas de instalação.</p>
           <div class="social-links d-flex">
-            <a href="https://www.instagram.com/metalnobreoficial" target="_blank"><i class="bi bi-instagram"></i></a>
-            <a href="https://www.facebook.com/metalnobreoficial" target="_blank"><i class="bi bi-facebook"></i></a>
-            <a href="https://www.linkedin.com/company/metalnobre" target="_blank"><i class="bi bi-linkedin"></i></a>
-            <a href="https://wa.me/551140000000" target="_blank"><i class="bi bi-whatsapp"></i></a>
+            <a href="https://www.instagram.com/grupometalnobre" target="_blank"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/grupo-metal-nobre-sbc/" target="_blank"><i
+                class="bi bi-linkedin"></i></a>
+            <a href="https://wa.me/551129456222" target="_blank"><i class="bi bi-whatsapp"></i></a>
           </div>
         </div>
 
@@ -404,6 +479,9 @@
 
   </footer>
 
+    <a href="https://wa.me/551129456222"
+    class="whatsapp d-flex align-items-center justify-content-center">
+    <i class="bi bi-whatsapp"></i></a>
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i

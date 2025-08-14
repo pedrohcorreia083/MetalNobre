@@ -654,6 +654,26 @@ h6 {
 }
 
 /*--------------------------------------------------------------
+# Whatsapp
+--------------------------------------------------------------*/
+
+.whatsapp {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  right: 15px;
+  bottom: 15px;
+  z-index: 99999;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 1px 1px 2px #888;
+  transition: all 0.4s;
+}
+
+/*--------------------------------------------------------------
 # Scroll Top Button
 --------------------------------------------------------------*/
 .scroll-top {
@@ -775,7 +795,7 @@ section,
 }
 
 .section-title h2 {
-  font-size: 13px;
+  font-size: 28px;
   letter-spacing: 1px;
   font-weight: 700;
   padding: 8px 20px;
@@ -1991,9 +2011,13 @@ section,
 }
 
 .call-to-action .action-section .quick-contact .contact-label {
-  font-size: 0.95rem;
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
-  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--accent-color);
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
 }
 
 .call-to-action .action-section .quick-contact .contact-link {
@@ -7444,233 +7468,100 @@ section,
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
-.contact .contact-info-box {
-  background-color: var(--surface-color);
-  border-radius: 10px;
-  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
-  padding: 25px;
-  height: 100%;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  display: flex;
-  align-items: flex-start;
-  gap: 15px;
-}
-
-.contact .contact-info-box:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
-}
-
-.contact .contact-info-box .icon-box {
-  background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
-  color: var(--accent-color);
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
-
-.contact .contact-info-box .icon-box i {
-  font-size: 24px;
-}
-
-.contact .contact-info-box .info-content h4 {
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-
-.contact .contact-info-box .info-content p {
-  margin-bottom: 5px;
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
-  font-size: 15px;
-  line-height: 1.5;
-}
-
-.contact .contact-info-box .info-content p:last-child {
-  margin-bottom: 0;
-}
-
-.contact .map-section {
-  position: relative;
-  width: 100%;
-  height: 500px;
-  overflow: hidden;
-}
-
-.contact .map-section iframe {
-  display: block;
-  width: 100%;
-  height: 100%;
-  border: 0;
-}
-
-.contact .form-container-overlap {
-  position: relative;
-  margin-top: -150px;
-  margin-bottom: 60px;
-  z-index: 10;
-}
-
-.contact .contact-form-wrapper {
-  background-color: var(--surface-color);
-  border-radius: 12px;
-  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
-  padding: 40px;
-}
-
-.contact .contact-form-wrapper h2 {
-  font-size: 28px;
-  font-weight: 700;
-  margin-bottom: 30px;
+.contact {
+  background-image: url("../img/dotted-world-1.webp");
+  background-position: left center;
+  background-repeat: no-repeat;
   position: relative;
 }
 
-.contact .contact-form-wrapper h2:after {
+@media (max-width: 640px) {
+  .contact {
+    background-position: center 50px;
+    background-size: contain;
+  }
+}
+
+.contact:before {
   content: "";
+  background: color-mix(in srgb, var(--background-color), transparent 30%);
   position: absolute;
-  left: 50%;
-  bottom: -10px;
-  transform: translateX(-50%);
-  width: 50px;
-  height: 3px;
-  background-color: var(--accent-color);
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
-.contact .contact-form-wrapper .form-group {
-  margin-bottom: 20px;
+.contact .info-item+.info-item {
+  margin-top: 40px;
 }
 
-.contact .contact-form-wrapper .form-group .input-with-icon {
-  position: relative;
-}
-
-.contact .contact-form-wrapper .form-group .input-with-icon i {
-  position: absolute;
-  left: 15px;
-  top: 50%;
-  transform: translateY(-50%);
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
-  font-size: 18px;
-  z-index: 10;
-}
-
-.contact .contact-form-wrapper .form-group .input-with-icon i.message-icon {
-  top: 28px;
-}
-
-.contact .contact-form-wrapper .form-group .input-with-icon textarea+i {
-  top: 25px;
-  transform: none;
-}
-
-.contact .contact-form-wrapper .form-group .input-with-icon .form-control {
-  border-radius: 8px;
-  padding: 12px 15px 12px 45px;
-  height: 3.5rem;
-  color: var(--default-color);
-  background-color: var(--surface-color);
-  font-size: 15px;
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 80%);
-}
-
-.contact .contact-form-wrapper .form-group .input-with-icon .form-control:focus {
-  border-color: var(--accent-color);
-  box-shadow: 0 0 0 0.25rem color-mix(in srgb, var(--accent-color), transparent 90%);
-}
-
-.contact .contact-form-wrapper .form-group .input-with-icon .form-control::placeholder {
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
-}
-
-.contact .contact-form-wrapper .form-group .input-with-icon textarea.form-control {
-  height: 180px;
-  resize: none;
-  padding-top: 15px;
-}
-
-.contact .contact-form-wrapper .btn-submit {
-  background-color: var(--accent-color);
-  border: none;
+.contact .info-item i {
+  background: var(--accent-color);
   color: var(--contrast-color);
-  padding: 12px 30px;
-  font-size: 16px;
-  font-weight: 600;
-  letter-spacing: 1px;
-  border-radius: 8px;
-  transition: all 0.3s ease;
-  box-shadow: 0 5px 15px color-mix(in srgb, var(--accent-color), transparent 70%);
+  font-size: 20px;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+  margin-right: 15px;
 }
 
-.contact .contact-form-wrapper .btn-submit:hover {
-  background-color: color-mix(in srgb, var(--accent-color), transparent 15%);
-  transform: translateY(-3px);
-  box-shadow: 0 8px 20px color-mix(in srgb, var(--accent-color), transparent 60%);
+.contact .info-item h3 {
+  padding: 0;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 5px;
 }
 
-.contact .contact-form-wrapper .btn-submit:active {
-  transform: translateY(0);
-  box-shadow: 0 3px 10px color-mix(in srgb, var(--accent-color), transparent 70%);
+.contact .info-item p {
+  padding: 0;
+  margin-bottom: 0;
+  font-size: 14px;
 }
 
-.contact .contact-form-wrapper .loading,
-.contact .contact-form-wrapper .error-message,
-.contact .contact-form-wrapper .sent-message {
-  margin-top: 10px;
-  margin-bottom: 20px;
+.contact .php-email-form {
+  height: 100%;
 }
 
-@media (max-width: 992px) {
-  .contact .form-container-overlap {
-    margin-top: -120px;
-  }
-
-  .contact .contact-form-wrapper {
-    padding: 30px;
-  }
+.contact .php-email-form input[type=text],
+.contact .php-email-form input[type=email],
+.contact .php-email-form textarea {
+  font-size: 14px;
+  padding: 10px 15px;
+  box-shadow: none;
+  border-radius: 0;
+  color: var(--default-color);
+  background-color: color-mix(in srgb, var(--background-color), transparent 10%);
+  border-color: color-mix(in srgb, var(--default-color), transparent 60%);
 }
 
-@media (max-width: 768px) {
-  .contact .contact-info-box {
-    margin-bottom: 20px;
-  }
-
-  .contact .form-container-overlap {
-    margin-top: -100px;
-  }
-
-  .contact .contact-form-wrapper {
-    padding: 25px;
-  }
-
-  .contact .contact-form-wrapper h2 {
-    font-size: 24px;
-  }
-
-  .contact .map-section {
-    height: 450px;
-  }
+.contact .php-email-form input[type=text]:focus,
+.contact .php-email-form input[type=email]:focus,
+.contact .php-email-form textarea:focus {
+  border-color: var(--accent-color);
 }
 
-@media (max-width: 576px) {
-  .contact .form-container-overlap {
-    margin-top: -80px;
-  }
+.contact .php-email-form input[type=text]::placeholder,
+.contact .php-email-form input[type=email]::placeholder,
+.contact .php-email-form textarea::placeholder {
+  color: color-mix(in srgb, var(--default-color), transparent 70%);
+}
 
-  .contact .contact-form-wrapper {
-    padding: 20px;
-  }
+.contact .php-email-form button[type=submit] {
+  color: var(--contrast-color);
+  background: var(--accent-color);
+  border: 0;
+  padding: 10px 30px;
+  transition: 0.4s;
+  border-radius: 50px;
+}
 
-  .contact .btn-submit {
-    width: 100%;
-  }
-
-  .contact .map-section {
-    height: 400px;
-  }
+.contact .php-email-form button[type=submit]:hover {
+  background: color-mix(in srgb, var(--accent-color), transparent 20%);
 }
 
 /*--------------------------------------------------------------

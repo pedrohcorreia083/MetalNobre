@@ -1565,9 +1565,8 @@ section,
 }
 
 .featured-tours .tour-card .tour-image img {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
+  width: auto;
+  height: 185px;
   padding: 10px;
   border-radius: 20px;
 }

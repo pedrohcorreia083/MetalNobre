@@ -75,11 +75,46 @@
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="row align-items-center mb-5">
-          <div class="col-lg-7 d-flex justify-content-center" data-aos="zoom-in" data-aos-delay="300">
-            <div class="hero-image">
-              <img src="./assets/img/8/MT-4003_A.png" class="img-fluid" alt="Totem MT-4003">
+          <div class="col-lg-7" data-aos="zoom-in" data-aos-delay="300">
+            <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./assets/img/8/MT-4003_A.png" class="img-fluid"
+                    alt="Totem MT-4003 - Vista Frontal">
+                </div>
+                <div class="carousel-item">
+                  <img src="./assets/img/8/MT-4003_B.png" class="d-block w-100 img-fluid" alt="Totem MT-4003 - Lateral">
+                </div>
+                <div class="carousel-item">
+                  <img src="./assets/img/8/MT-4003_C.png" class="d-block w-100 img-fluid"
+                    alt="Totem MT-4003 - Detalhe LED">
+                </div>
+              </div>
+
+              <!-- Controles do Carrossel -->
+              <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#productCarousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+              </button>
+
+              <!-- Indicadores -->
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="1"
+                  aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="2"
+                  aria-label="Slide 3"></button>
+              </div>
             </div>
           </div>
+
 
           <div class="col-lg-5" data-aos="slide-left" data-aos-delay="400">
             <div class="story-content">

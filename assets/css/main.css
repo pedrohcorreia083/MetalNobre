@@ -1954,17 +1954,20 @@ section,
 }
 
 /* Mantém altura fixa e proporção das imagens do carrossel */
-#productCarousel .carousel-inner img {
-  width: auto;
-  height: 500px;
+.carrosselProduto .carousel-inner img {
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  /* aumenta limite */
+  height: auto;
   transition: transform 0.6s ease;
 }
 
-#productCarousel .carousel-control-prev-icon {
+.carousel-control-prev .carousel-control-prev-icon {
   background-image: url("data:image/svg+xml;charset=UTF-8,<svg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 16 16'><path d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/></svg>");
 }
 
-#productCarousel .carousel-control-next-icon {
+.carousel-control-next .carousel-control-next-icon {
   background-image: url("data:image/svg+xml;charset=UTF-8,<svg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 16 16'><path d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/></svg>");
 }
 

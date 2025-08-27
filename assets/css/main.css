@@ -1579,7 +1579,7 @@ section,
 }
 
 .featured-tours .tour-card .tour-content h4 {
-  font-size: 22px;
+  font-size: 19px;
   font-weight: 700;
   margin-bottom: 15px;
   color: var(--heading-color);
@@ -1610,7 +1610,7 @@ section,
   }
 
   .featured-tours .tour-card .tour-content h4 {
-    font-size: 20px;
+    font-size: 17px;
   }
 
   .featured-tours .tour-card .tour-content .tour-action {
